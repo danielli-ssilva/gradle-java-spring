@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class indexController {
     @RequestMapping("/")
     public String home(){
-        return "index.jsp";
+        return "index";
     }
 
     @RequestMapping("/mensagem")
@@ -29,6 +29,6 @@ public class indexController {
                 break;
         }
         ui.addAttribute("texto", texto);
-        return "mensagem.jsp";
+        return "mensagem";
     }
 }
